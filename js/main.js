@@ -18,7 +18,6 @@ var app = {
         this.store = new LocalStorageStore(function() {
             self.showAlert('Store Initialized', 'Info');
         });
-        
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     },
 
